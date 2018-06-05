@@ -1,10 +1,10 @@
 " =============================================================================
 " Filename: plugin/lightline-serendip.vim
-" Version: 0.1
+" Version: 0.2
 " Author: iNo
 " License: MIT License
 " Created: 2013/08/25 22:59:12.
-" LastUpdated: 2016/11/19 23:11:32.
+" LastUpdated: 2018/06/05 11:25:29.
 " =============================================================================
 let s:base03 = [ '#002b36', 234 ]
 let s:base02 = [ '#073642', 235 ]
@@ -31,14 +31,14 @@ if &background ==# 'light'
 endif
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}}
 let s:p.normal.left = [ [ s:base3, s:blue ], [ s:base3, s:base01 ], [ s:base3, s:red ], [ s:base3, s:base02 ] ]
-let s:p.normal.right = [ [ s:base02, s:base0 ], [ s:base03, s:base01 ], [ s:base0, s:base02 ] ]
+let s:p.normal.right = [ [ s:base02, s:base0 ], [ s:base2, s:base01 ], [ s:base2, s:base02 ] ]
 let s:p.inactive.right = [ [ s:base02, s:base01 ], [ s:base0, s:base02 ], [ s:base0, s:base02 ] ]
 let s:p.inactive.left =  [ [ s:base0, s:base02 ], [ s:base3, s:lightred ], [ s:base00, s:base03 ] ]
 let s:p.insert.left = [ [ s:base3, s:green ], [ s:base3, s:base01 ], [ s:base3, s:red ], [ s:base3, s:base02 ] ]
 let s:p.replace.left = [ [ s:base3, s:red ], [ s:base3, s:base01 ], [ s:base3, s:red ], [ s:base3, s:base02 ] ]
 let s:p.visual.left = [ [ s:base3, s:magenta ], [ s:base3, s:base01 ], [ s:base3, s:red ], [ s:base3, s:base02 ] ]
-let s:p.normal.middle = [ [ s:base02, s:base02 ] ]
-let s:p.insert.middle = [ [ s:base02, s:green ] ]
+let s:p.normal.middle = [ [ s:base2, s:base02 ] ]
+let s:p.insert.middle = [ [ s:base2, s:green ] ]
 let s:p.inactive.middle = [ [ s:base02, s:base03 ] ]
 
 function! s:flatten(p)
