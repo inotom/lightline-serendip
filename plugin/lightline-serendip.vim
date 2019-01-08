@@ -1,10 +1,10 @@
 " =============================================================================
 " Filename: plugin/lightline-serendip.vim
-" Version: 0.2
+" Version: 0.3
 " Author: iNo
 " License: MIT License
 " Created: 2013/08/25 22:59:12.
-" LastUpdated: 2018/06/05 11:25:29.
+" LastUpdated: 2019/01/08 18:19:03.
 " =============================================================================
 let s:base03 = [ '#002b36', 234 ]
 let s:base02 = [ '#073642', 235 ]
@@ -40,6 +40,8 @@ let s:p.visual.left = [ [ s:base3, s:magenta ], [ s:base3, s:base01 ], [ s:base3
 let s:p.normal.middle = [ [ s:base2, s:base02 ] ]
 let s:p.insert.middle = [ [ s:base2, s:green ] ]
 let s:p.inactive.middle = [ [ s:base02, s:base03 ] ]
+let s:p.normal.error = [ [ s:base3, s:red ] ]
+let s:p.normal.warning = [ [ s:base3, s:yellow ] ]
 
 function! s:flatten(p)
   for k in values(a:p)
